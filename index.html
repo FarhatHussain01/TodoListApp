@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhat todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container" class="container mx-auto bg-gray-100 p-5">
+        <label class="font-bold text-3xl mb-5 text-center flex justify-center">My Todo List</label>
+        <div id="input-container" class="flex flex-col sm:flex-row gap-3 mt-2">
+            <input id="todo-item" type="text" placeholder="Write here" class="px-4 py-2 border border-gray-300 rounded-md text-xl flex-grow" size="35">
+            <button id="add-todo-btn" class="px-4 py-2 text-xl bg-blue-500 text-white rounded-md mt-3 sm:mt-0">Add</button>
+            <button id="del-all-btn" class="px-4  py-2 text-xl bg-red-500 text-white rounded-md mt-3 sm:mt-0" onclick="deleteAll()">Delete All</button>
+        </div>
+    </div>
+    <div id="todo-list-container" class="container mx-auto bg-gray-100 mt-5">
+        <ul id="list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
